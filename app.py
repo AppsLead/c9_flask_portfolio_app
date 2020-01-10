@@ -17,7 +17,7 @@ def home_page():
 def profile(name):
 	new_name = name + "likes to eat ice cream"		#bc 011020 created var new_name
 	#return render_template('index.html', name=name)	#orig
-	return render_template('index.html', name=new_name)	#pass the new name to 'name' and it will send to 'index.html' file
+	return render_template('index.html', name = new_name)	#pass the new name to 'name' and it will send to 'index.html' file
 
 @app.route('/add_numbers', methods=['GET','POST'])
 def add_numbers_post():
